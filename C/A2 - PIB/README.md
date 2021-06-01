@@ -69,6 +69,6 @@ Nesta seção haverão instruções caso você queira editar o projeto, explican
 - **main.c** - Arquivo principal, é nele que se inicia e compila todo o projeto.
 
 ## Contatos
-- Daniel RA: 108878
+- Daniel Henrique de Assi RA: 108878
 - Lucas Bevilaqua RA: 110601
 - Nicolas Gomes RA: 109181
