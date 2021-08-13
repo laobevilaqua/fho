@@ -1,0 +1,6 @@
+ps ~au grep "teste" > processos.log
+grep "pts/0" processos.log
+mv processos.log .proc_usuario.log
+ls -lh .proc_usuario.log
+nano .proc_usuario.log
+man free >> proc.usuario.log

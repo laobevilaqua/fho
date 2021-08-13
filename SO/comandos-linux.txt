@@ -1,0 +1,12 @@
+1-pwd
+2-mkdir -p exercicios/si
+3-touch exercicios/si/arquivo1.txt
+4-touch exercicios/si/arquivo2.txt
+5-touch exercicios/si/arquivo3.txt
+6-touch exercicios/si/sapo\ satisfacao.txt
+7-cd exercicios/si
+8-ls ?a*.txt
+9-ls *[1-9].txt
+10-cp arq* ..
+11-mv arquivo2.txt exericios
+12-rm -f *{o,3.txt}

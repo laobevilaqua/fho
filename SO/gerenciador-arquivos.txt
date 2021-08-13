@@ -1,0 +1,2 @@
+DMA - é para evitar o uso da CPU porque não exige que o dado passe pelo processador.
+No disco rigido a menor porção FISICA são os setores, pois os blocos é sistema de arquivos.

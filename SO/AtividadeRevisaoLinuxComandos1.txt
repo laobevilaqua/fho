@@ -1,0 +1,16 @@
+mkdir home
+cd home 
+
+mkdir diretorio1 diretorio2
+cd diretorio1
+touch arquivo1 arquivo2 arquivo3.txt arquivo4.txt
+cd ..
+cp diretorio1/*.txt diretorio2
+mkdir -p diretorio2/diretorio3
+cd diretorio2/diretorio3
+ls -s ../../diretorio1/arquivo1
+cd ../../
+rm diretorio1
+rm -rf diretorio1 diretorio2
+
+

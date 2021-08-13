@@ -1,0 +1,6 @@
+1-find / -name if-*
+2-pwd
+3-whereis -b frep ou which grep (ambos funcionam nesse caso)
+4-find / -name fst*
+5-find / -name netplan
+6-grep nameserver /etc/*.conf
