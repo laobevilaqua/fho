@@ -1,0 +1,31 @@
+²²²²²²²²²²²²RazÃƒÂ£o de mortalidade materna dos estados brasileiros em ordem crescente de acordo com o indice²²²²²²²²²²²²
+
++-------------------------------|
+|		ESTADO (INDICE)			|
++-------------------------------|
+	Sergipe (-67,00)		
+	RondÃ´nia (-40,10)		
+	Mato-Grosso-do-Sul (-38,50)		
+	Amazonas (-31,10)		
+	Roraima (-28,60)		
+	Rio-de-Janeiro (-26,60)		
+	Bahia (-26,40)		
+	Rio-Grande-do-Sul (-23,90)		
+	ParanÃ¡ (-20,00)		
+	EspÃ­rito-Santo (-18,20)		
+	CearÃ¡ (-17,10)		
+	Tocantins (-11,40)		
+	SÃ£o-Paulo (-5,80)		
+	Minas-Gerais (-5,10)		
+	Mato-Grosso (-3,07)		
+	Santa-Catarina (-1,30)		
+	ParÃ¡ (-0,30)		
+	PiauÃ­ (3,50)		
+	Rio-Grande-do-Norte (5,30)		
+	Pernambuco (5,50)		
+	GoiÃ¡s (5,90)		
+	MaranhÃ£o (6,80)		
+	ParaÃ­ba (16,90)		
+	Acre (17,50)		
+	Alagoas (24,80)		
+	AmapÃ¡ (73,20)		
