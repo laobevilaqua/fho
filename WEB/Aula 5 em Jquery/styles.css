@@ -1,0 +1,77 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --green: rgb(10, 235, 10);
+    --gray: rgb(75, 75, 75);
+    --gray-ligth: rgb(145, 142, 142);
+}
+
+.bg-gray {
+    background: var(--gray);
+}
+
+/* navbar and header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    width: 99%;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+.navbar ul li:first-child {
+    list-style-type: none;
+    padding: 0 0;
+}
+
+.navbar ul li .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.navbar ul li .nav-link.active {
+    background: var(--green);
+}
+
+/* Containers of calculate */
+.container-cal {
+    display: flex;
+    padding: 11px;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.container-cal .error {
+    display: none;
+    color: red;
+}
+
+.container-cal .btn-green {
+    background: green;
+    color: white;
+    width: 75px;
+}

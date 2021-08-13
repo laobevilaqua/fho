@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(yellow, orange);
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+}
+
+.header h1 {
+    color: green;
+    font-size: 4em;
+}
+
+.header img {
+    width: 25%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+legend {
+    color: brown;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+fieldset {
+    width: 36%;
+    border: 1px dashed brown;
+    box-shadow: 10px 10px 92px 2px brown;
+}
+
+select {
+    border: none;
+    border-radius: 16px;
+    padding: 4px;
+    min-width: 40%;
+    text-align-last: center;
+    overflow: none;
+}
+
+button { 
+    border: none;
+    border-radius: 15px;
+    background: green;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5px 30px;
+    outline: none;
+}
+/* Modal */
+.modal-container {
+    display: none;
+    position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+}
+
+.modal-container.open {
+    display: block !important;
+}
+
+.modal {
+    height: 153px;
+    width: 377px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal button {
+    width: 25%;
+}
+
+/* Divisão em cima da pagina branco */
+
+.custom-shape-divider-top-1618004620 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1618004620 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 122px;
+}
+
+.custom-shape-divider-top-1618004620 .shape-fill {
+    fill: #FFFFFF;
+}

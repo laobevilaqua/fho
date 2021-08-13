@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lanchonete JS</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="assets/lanche.png">
+    </head>
+    <body>
+        <div class="custom-shape-divider-top-1618004620">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+
+        <div id="modal-container" class="modal-container">
+            <div class="modal">
+                <div>
+                    <h3>O valor Total é:</h3>
+                    <h1 id="totalCompra"></h1>
+                </div>
+                <button id="btnCloseModal">OK</button>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Lanchone KAPPA</h1>
+            <img src="assets/lanche.png">
+        </div>
+        <div class="container">
+            <fieldset>
+                <legend>Cantina</legend>
+                <form name="carrinho">
+                    <label for="selectSalgado">Salgado:</label>
+                    
+                    <select name="selectSalgado">
+                        <option value="1" selected> Coxinha</option>
+                        <option value="2"> Croquete</option>
+                        <option value="3"> Empada</option>
+                        <option value="4"> Esfirra</option>
+                        <option value="5"> Pão de Queijo</option>
+                        <option value="6"> Quibe</option>
+                    </select>
+    
+                    <label for="selectBebida">Bebidas:</label>
+    
+                    <select name="selectBebida">
+                        <option value="1" selected> Água </option>
+                        <option value="2"> Café </option>
+                        <option value="3"> Coca-Cola </option>
+                        <option value="4"> Guaraná </option>
+                        <option value="5"> Suco</option>
+                    </select>
+                    
+                    <p>
+                        <label for="desconto">Desconto estudante:</label>
+                        <input type="radio" name="desconto" value="1"> Sim 
+                        <input type="radio" name="desconto" value="0" checked="true"> Não
+                        <br><br>
+                        <input type="checkbox" name="viagem"> Embalagem para a viagem
+                    </p>
+                    <button id="buttonCarrinho"> 
+                        Calcular
+                    </button>
+                </form>
+            </fieldset>
+        </div>
+
+        <script src="JS.js"></script>
+    </body>
+</html>

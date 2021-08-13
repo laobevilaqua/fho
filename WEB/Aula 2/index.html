@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicios</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body onload="onloadWindow()">
+
+        <nav class="navbar">
+            <ul class="bg-gray">
+                <li>
+                    <button class="nav-link active" onclick="changeExercise(1)">Exercicio 1</button>
+                </li>
+
+                <li>
+                    <button class="nav-link" onclick="changeExercise(2)">Exercicio 2</button>
+                </li>
+
+                <li>
+                    <button class="nav-link" onclick="changeExercise(3)">Exercicio 3</button>
+                </li>
+
+                <li>
+                    <button class="nav-link" onclick="changeExercise(4)">Exercicio 4</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="firstExercise">
+            <p id="firstParagraph">A furia me custou todos meus gaulpoints</p>
+            <p id="secondParagraph">É triste ser brasileiro e torcer para a MIBR ou FURIA</p>
+            <p id="thirdParagraph">Paragrafo é legal</p>
+            <p id="fourthParagraph">Dica do dia: não começe a jogar CS</p>
+            <p id="fiveParagraph">O gau me da um pontos ai</p>
+            <p id="sixParagraph">Não sou inteligente nem exemplar, apenas sou muito curioso</p>
+    
+            <button onclick="onClickButton()">Botão magico</button>
+        </div>
+
+        <div id="secondExercise">
+            <button onclick="toSwitchOffImgLamp()">Desligar</button>
+            <img id="imgLamp" src="/assets/lamp_off.gif" alt="lamp off">
+            <button onclick="turnOnImgLamp()">Ligar</button>
+        </div>
+        
+        <div id="thirdExercise">
+            <button id="btnLamp" onclick="toogleImgLamp()">Ligar</button>
+            <img id="imgLamp2" src="/assets/lamp_off.gif" alt="lamp off">
+        </div>
+
+        <div id="fourthExercise" class="container-cal">
+            <div>
+                <label for="value1">Digite o primeiro valor:</label>
+                <input id="value1" type="number" step="0.1">
+            </div>
+
+            <div>
+                <label for="value2">Digite o segundo valor:</label>
+                <input id="value2" type="number" step="0.1">
+            </div>
+
+            <div>
+                <label for="value1">Selecione uma operação:</label>
+                <select name="operationsMath" id="operationsMath">
+                    <option value="0" selected>Selecione uma operação</option>
+                    <option value="1">Somar</option>
+                    <option value="2">Subtrair</option>
+                    <option value="3">Multiplicar</option>
+                    <option value="4">Dividir</option>
+                </select>
+            </div>
+           
+            <button class="btn-green" onclick="calculate()">Calcular</button>
+           
+            <p id="error" class="error">Formulario invalido. Verifique se digitou todos os valores e se selecionou uma operação.</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

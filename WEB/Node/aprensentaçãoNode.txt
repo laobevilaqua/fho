@@ -1,0 +1,50 @@
+Leveza: 
+Voce instala somente o que precisa na sua aplicação. Ele é uma plataforma de aplicação (ambiente de execução) na qual você escreve seus programas com Javascript que serão compilados, otimizados e interpretados pela máquina virtual V8 do chrome, logo voce não precisa instalar uma IDE complexa e pesada como o Visual Studio, só o Visual Studio Code já basta, ate mesmo o bloco de notas ou sublime.
+Exemplo:
+-Quero fazer uma API - instalo o Express ou Nest
+-Preciso de fazer algo em tempo real como um chat - socket.io
+-Quero fazer um programa p arduino (normalmente feito em C++) em javascript - Johnny-Five or cylon
+
+Flexibilidade
+Como ja dito anteriormente voce instala o que precisa com muita facilidade, troca de libs muito facilmente. Voce constroi a aplicação com base no que voce precisa. Voce modula a aplicação do seu jeito. A arquitetura e estrutura não tem padrões.
+
+Produtividade
+Time full-stack
+O node.js é considerado o mais efeciente quando temos mais requisições e saidas, ou seja muitas pessoas acessam ela e ela ta fazendo varias operações em disco como: gravação de log, consulta em banco e etc.
+O node.js é multiplataforma então voce roda na SO de preferencia.
+Se o projeto for monorepo ou seja tudo em um repositorio voce consegue reutilizar codigo do back no front, como uma validação de mascara e etc.
+
+Comunidade
+A comunidade do node.js é muito grande e ativa, ele vive em alta a muito tempo deste de 2009.
+http://www.modulecounts.com/ se acessar-mos o site vemos que a curva dele esta só aumentando, logo a node é uma das mais cobiçadas tecnologias no mercado.
+
+Facilidade
+Como a comunidade é muito grande fica muito facil de achar a lib que voce precisa para seu projeto.
+Qualquer implementação de componente é facilmente encontrada. 
+E após encontrar é só instalar uma lib já criada por alguem e sair usando, simples e rapido.
+
+
+DESVANTAGENS
+
+Escabilidade
+Voce vai iniciar o projeto, o javascript tem um ecossitema muito grande, mas como saber separar o joio do trigo ? como saber alguem framework e libs instalar ??
+Vou construir uma API eu utlizo o Nest, Express, Koa, Sails
+e para o front ?
+Utilizo o Angular, Vue, React, React Native, Next.js
+
+Tipagem
+Para quem vem de Java ou C# que são linguagens totalmente tipadas e Orientadas a Objetos vai sentir essa diferença, mesmo utilizando o typescript para tipagem, o programador vai sentir falta do que esta acostumado
+
+Loops de evento
+Nods é assincrono. 
+
+Assincrono é voce ter funções assyncs, ou seja o seu codigo não é bloqueado.
+Com exemplo pense que voce aperta o botão gerar relatorios, a função relatorio que é sincronoma chama as funções assincronomas realtorioA e relatorioB que são executadas não no mesmo momento mas lidas de forma lisa.
+
+
+Isso é um pouco chato de se acostumar dependendo da complexidade de cada uma das suas requisições, uma vez que o uso demasiado de callbacks pode gerar o chamado callback hell na qual voce nunca sabe onde o seu codigo está executando para entrar em loop, o que é resolvido parcialmente com o uso de Promises (ES6) e completamente com Async/Await (ES7)
+
+
+Controle de CPU
+O node é single thread como dito anteriormente nos primeiros slides e como eu disse antes o node vai executar varias vezes sem travar a CPU (por conta de ser assincronomo), porem ele exige muito dela, ele vai constantemente ficar dando comandos para ela, ainda mais quando voce utiliza paginas real time, que tem entradas e leituras contantes de dados, então voce consegue controlar o que chega, mas node vai usar 100% do potencial da sua maquina, voce não consegue controlar essa parte.
+Por exemplo eu tenho 1 tarefa, vou executar essa tarefa o mais rapido possivel, como faço isso ? pego 100% da sua CPU p mim e o chrome que cuide.
