@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "header.h"
 
 void inicializaLista(Arvore **tree){
@@ -44,26 +45,20 @@ void imprimeEmOrdem(Arvore *tree){
 	}
 }
 
-Arvore* pesquisarValor(Arvore *tree, float valor){
+Arvore* pesquisarValor(Arvore *tree, char uf[3]){
 	
 	Arvore *aux = tree;
 	
 	while(aux != NULL){ // sai do loop sem encontrar o arvore pesquisado
 	
-		if(
-			aux->a2015 == valor ||
-			aux->a2016 == valor ||
-			aux->a2017 == valor ||
-			aux->a2018 == valor ||
-			aux->a2019 == valor
-		) // sai do loop quando encontrar o arvore pesquisado 
+		if(aux->uf == uf) // sai do loop quando encontrar o arvore pesquisado 
 			break;
 
 		
-		else if(valor < aux->a2015)
+		else if(uf < aux->uf)
 			aux = aux->esq;
 			
-		else if(valor > aux->a2019)
+		else if(uf > aux->uf)
 			aux = aux->dir;
 	}
 	
@@ -98,19 +93,19 @@ void inserirValor(Arvore **tree, char uf[3], float a2015, float a2016, float a20
 		
 		papai = aux;
 		
-		if(a2019 < aux->a2015)
+		if(uf[0] < aux->uf[0])
 			aux = aux->esq;
 			
-		else if(a2019 > aux->a2019)
+		else if(uf[0] > aux->uf[0])
 			aux = aux->dir;
 			
 		else{ // se chave (ID) é repetida
-			printf("Nao eh possivel incluir a chave %f\n", a2019);
+			printf("Nao eh possivel incluir a chave %s\n", uf[0]);
 			return;	
 		}	
 	}
 	
-	if(a2019 < papai->a2015)
+	if(uf[0] < papai->uf[0])
 		papai->esq = novo;
 	else
 		papai->dir = novo;

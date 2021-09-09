@@ -18,7 +18,7 @@ void selectedOptionMenu(int optionId) {
             imprimePreOrdem(arvore);
             break;
         case 4:
-            pesquisarValorDoAno();
+            pesquisarValorDoEstado();
             break;
         case 5:
             getDataAndOrder();
@@ -45,11 +45,11 @@ void buildBST(FILE *file, int lines) {
     inserirValor(&arvore, uf, dado1, dado2, dado3, dado4, dado5);
 }
 
-void pesquisarValorDoAno() {
-    float valor;
+void pesquisarValorDoEstado() {
+    char valor[3];
 
     printf("Digite o valor que será buscado (utilize ','):\n");
-    scanf("%f", &valor);
+    scanf("%c", &valor);
     Arvore *arvoreEncontrada = pesquisarValor(arvore, valor);
     
     printf("Valor encontrado na arvore! Segue os dados linkados a esse valor\n");

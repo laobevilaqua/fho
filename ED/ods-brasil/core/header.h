@@ -7,5 +7,5 @@
 void selectedOptionMenu(int);
 void getDataAndOrder();
 void buildBST(FILE *, int); 
-void pesquisarValorDoAno();
+void pesquisarValorDoEstado();
 #endif
