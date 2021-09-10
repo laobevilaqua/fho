@@ -15,7 +15,7 @@ int listaVazia(Arvore *tree){
 } 
 
 void imprimeDado(Arvore *tree) {
-	printf("\n\n+------+------+------+------+------+------+\n");
+	printf("+------+------+------+------+------+------+\n");
 	printf("|  UF  | 2015 | 2016 | 2017 | 2018 | 2019 |\n");
 	printf("|  %s  | %.2f | %.2f | %.2f | %.2f | %.2f |\n", tree->uf, tree->a2015, tree->a2016, tree->a2017, tree->a2018, tree->a2019);
 	printf("+------+------+------+------+------+------+\n");
@@ -46,12 +46,10 @@ void imprimeEmOrdem(Arvore *tree){
 }
 
 Arvore* pesquisarValor(Arvore *tree, char uf[3]){
-	
 	Arvore *aux = tree;
 	
 	while(aux != NULL){ // sai do loop sem encontrar o arvore pesquisado
-	
-		if(aux->uf == uf) // sai do loop quando encontrar o arvore pesquisado 
+		if(!strcmp(aux->uf, uf)) // sai do loop quando encontrar o arvore pesquisado 
 			break;
 
 		
@@ -90,22 +88,21 @@ void inserirValor(Arvore **tree, char uf[3], float a2015, float a2016, float a20
 	/* loop para encontrar a posição de inclusão */
 	aux = *tree;
 	while(aux != NULL){  // permite achar a posição da nova arvore
-		
 		papai = aux;
 		
-		if(uf[0] < aux->uf[0])
+		if(uf < aux->uf)
 			aux = aux->esq;
 			
-		else if(uf[0] > aux->uf[0])
+		else if(uf > aux->uf)
 			aux = aux->dir;
 			
 		else{ // se chave (ID) é repetida
-			printf("Nao eh possivel incluir a chave %s\n", uf[0]);
+			printf("Nao eh possivel incluir a chave %s\n", uf);
 			return;	
 		}	
 	}
 	
-	if(uf[0] < papai->uf[0])
+	if(uf < papai->uf)
 		papai->esq = novo;
 	else
 		papai->dir = novo;

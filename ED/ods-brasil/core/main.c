@@ -41,17 +41,20 @@ void buildBST(FILE *file, int lines) {
     char uf[3];
 
     fscanf(file, "%s %f %f %f %f %f", &uf, &dado1, &dado2, &dado3, &dado4, &dado5);
-    
     inserirValor(&arvore, uf, dado1, dado2, dado3, dado4, dado5);
 }
 
 void pesquisarValorDoEstado() {
     char valor[3];
 
-    printf("Digite o valor que será buscado (utilize ','):\n");
-    scanf("%c", &valor);
+    printf("Digite o valor que será buscado:\n");
+    scanf("%s", &valor);
     Arvore *arvoreEncontrada = pesquisarValor(arvore, valor);
     
-    printf("Valor encontrado na arvore! Segue os dados linkados a esse valor\n");
-    imprimeDado(arvore);
+    if (arvoreEncontrada != NULL) {
+        printf("Valor encontrado na arvore! Segue os dados linkados a esse valor\n");
+        imprimeDado(arvoreEncontrada);
+    } else {
+        printf("Valor não encontrado na arvore!\n");
+    }
 }

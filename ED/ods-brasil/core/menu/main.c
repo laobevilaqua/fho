@@ -13,8 +13,8 @@ void showMenu(void (*callback)(int *)) {
         system("cls");
         printf("Main Menu\n");
         printf("1. Exibir todos os dados capiturados em ordem (Considerando o ultimo ano como referencia).\n");
-        printf("2. Exibir todos os dados capiturados em pós ordem (Considerando o ultimo ano como referencia).\n");
-        printf("3. Exibir todos os dados capiturados em pré ordem (Considerando o ultimo ano como referencia).\n");
+        printf("2. Exibir todos os dados capiturados em pos ordem (Considerando o ultimo ano como referencia).\n");
+        printf("3. Exibir todos os dados capiturados em pre ordem (Considerando o ultimo ano como referencia).\n");
         printf("4. Pesquisar arvore com base no valor.\n");
         printf("5. Atualizar dados do arquivo.\n");
         printf("0. Encerrar programa.\n");

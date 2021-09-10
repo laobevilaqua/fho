@@ -21,7 +21,7 @@ void imprimePreOrdem(Arvore*);
 void imprimePosOrdem(Arvore*);
 void imprimeEmOrdem(Arvore*);
 
-Arvore* pesquisarValor(Arvore*, float);
+Arvore* pesquisarValor(Arvore*, char[3]);
 void inserirValor(Arvore**, char[3], float, float, float, float, float);
 
 #endif
