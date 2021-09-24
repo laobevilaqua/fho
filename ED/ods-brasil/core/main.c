@@ -23,6 +23,16 @@ void selectedOptionMenu(int optionId) {
         case 5:
             getDataAndOrder();
             break;
+        case 6:
+            excluirEstado();
+            break;
+        // case 7:
+        //     // esvaziaListaArvore(&arvore);
+        //     libera_ArvBin(arvore);
+        //     break;
+        case 7:
+            pesquisarMediaDoAno();
+            break;
         case 0:
             break;
         default:
@@ -47,7 +57,7 @@ void buildBST(FILE *file, int lines) {
 void pesquisarValorDoEstado() {
     char valor[3];
 
-    printf("Digite o valor que será buscado:\n");
+    printf("Digite o estado que será buscado:\n");
     scanf("%s", &valor);
     Arvore *arvoreEncontrada = pesquisarValor(arvore, valor);
     
@@ -57,4 +67,29 @@ void pesquisarValorDoEstado() {
     } else {
         printf("Valor não encontrado na arvore!\n");
     }
+}
+
+void excluirEstado() {
+    char valor[3];
+
+    printf("Digite o estado que será removido:\n");
+    scanf("%s", &valor);
+
+    int removeu = removerDado(&arvore, valor);
+    if (removeu) {
+        printf("Estado removido na arvore\n");
+    } else {
+        printf("Estado não encontrado na arvore!\n");
+    }
+}
+
+void pesquisarMediaDoAno() {
+    int ano;
+
+    printf("Digite o ano que sera buscado:\n");
+    scanf("%d", &ano);
+
+    calculaMediaAnual(arvore, ano);
+    printf("Media anual do seu ano foi: %.2f", mediaAnual);
+    mediaAnual = 0;
 }

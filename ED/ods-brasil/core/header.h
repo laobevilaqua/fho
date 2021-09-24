@@ -8,4 +8,6 @@ void selectedOptionMenu(int);
 void getDataAndOrder();
 void buildBST(FILE *, int); 
 void pesquisarValorDoEstado();
+void excluirEstado();
+void pesquisarMediaDoAno();
 #endif

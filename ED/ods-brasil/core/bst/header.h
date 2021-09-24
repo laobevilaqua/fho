@@ -1,6 +1,8 @@
 #ifndef BST_H
 
 #define BST_H
+float mediaAnual;
+
 /* estrutura do noh da lista */
 typedef struct _arvore{
 	char uf[3];
@@ -23,5 +25,11 @@ void imprimeEmOrdem(Arvore*);
 
 Arvore* pesquisarValor(Arvore*, char[3]);
 void inserirValor(Arvore**, char[3], float, float, float, float, float);
+int removerDado(Arvore**, char[3]);
+Arvore* pesquisarMaior(Arvore*);
+void esvaziaListaArvore(Arvore**);
+void calculaMediaAnual(Arvore*, int);
 
+void libera_ArvBin(Arvore*);
+void liberaNo(Arvore*);
 #endif

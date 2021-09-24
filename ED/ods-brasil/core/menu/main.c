@@ -17,6 +17,9 @@ void showMenu(void (*callback)(int *)) {
         printf("3. Exibir todos os dados capiturados em pre ordem (Considerando o ultimo ano como referencia).\n");
         printf("4. Pesquisar arvore com base no valor.\n");
         printf("5. Atualizar dados do arquivo.\n");
+        printf("6. Remover estado da BST.\n");
+        // printf("7. Limpar BST.\n");
+        printf("7. Pesquisar media da ODS no brasil por ano.\n");
         printf("0. Encerrar programa.\n");
         
         printf("  Por favor digite a opção de desejo do 'Main Menu': \n");
